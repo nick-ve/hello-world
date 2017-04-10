@@ -1,3 +1,0 @@
-Dit is file mies in trunk
-And a new line
-
