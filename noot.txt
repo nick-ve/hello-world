@@ -1,3 +1,0 @@
-Dit is file noot in trunk
-And a new line
-
