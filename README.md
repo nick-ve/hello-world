@@ -2,26 +2,34 @@
 //*CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
 //*-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
  
-This RALICE cmz file is an attempt to provide an Object Oriented framework,
+This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
-detector data can be performed.
+detector data at the CERN LHC could be performed.
 In switching to Object Oriented programming, I myself have started to
-perform the WA93 and WA98 data analysis within the ROOT [1] framework.
+perform the WA93 and WA98 data analysis within the ROOT [1] framework
+and the corresponding ALICE software package was called RALICE.
 Having seen the great advantages of this system I have started to make my
-C++ classes more general in order to use them as an onset for an ALICE
-reconstruction (and physics analysis) framework.
-The RALICE package can be compiled on all platforms using the GNU G++
-compiler and the various classes can be used in standalone mode.
-However, running the programs within the ROOT framework greatly enlarges
-the analysis capabilities (e.g. histogramming, fitting, graphics etc...).
-In addition the high level of interactivity of the ROOT/CINT system allows
+C++ classes more general in order to use them as an onset for a generic
+reconstruction and (astro)physics analysis toolbox fully integrated within
+the ROOT framework.
+The basic generic classes providing various tools for detector signal handling,
+track storage, event building, physics analysis, statistics and even the simulation
+of particle collisions are contained in the "ncfspack" directory.
+In addition to that, various detector specific packages can be added to extend
+the functionality tailored to different experiments, like the "icepack" directory
+for the analysis of IceCube data.  
+The complete package can be compiled on all platforms which support ROOT,
+using for instance the GNU G++ compiler.
+Being embedded within the ROOT framework provides sophisticated analysis
+capabilities (e.g. histogramming, fitting, graphics etc...).
+In addition, the high level of interactivity of the ROOT/CINT system allows
 program development without the time consuming compile/link/load/execute cycle,
 whereas also the ROOT tree output format provides a completely machine
 independent data format providing efficient and easy to use data access
 capable to cope with the most complex data analyses programs.
  
-Only the (proposed) C++ ANSI standard is used in the source code and as
-such is fully compatible with all standard C++ compilers as well as with
+Only the C++ ANSI standard is used in the source code and as such the package
+is fully compatible with all standard C++ compilers as well as with
 the ROOT/CINT interpreting system.
  
 The comments in the source code are placed in the locations proposed
@@ -33,59 +41,54 @@ always updated documentation compatible with the current source code.
 Coding conventions :
 --------------------
 In order not to clash with the (class) names of the ROOT framework
-and (future) packages of other groups, a few rules concerning names
+and (future) packages of other experiments, a few rules concerning names
 of classes, (member)functions and variables have to be obeyed.
 The rules are the following :
  
- 1) Only (proposed) ANSI standard C++ is allowed, with an even stricter
+ 1) Only ANSI standard C++ is allowed, with an even stricter
     requirement that the code should compile without any warnings
-    under the GNU g++, msvc++ and the native C++ compilers of HP
-    and DECAlpha machines.
-    This will assure the programs to run on all standard ALICE platforms.
- 2) Class names start with "Ali" followed by an uppercase character,
-    all other characters are lowercase.
-    Example : AliCalorimeter
-    In this way the RALICE class names will NEVER clash with the ones
+    under the GNU g++, msvc++ and the native C++ compilers of HP,
+    Mac, AMD and DECAlpha machines.
+    This will assure the programs to run on all standard research platforms.
+ 2) The generic "ncfspack"  class names start with "Nc" followed by an
+    uppercase character, like for example : NcEvent.
+    In this way the "ncfspack" class names will NEVER clash with the ones
     of ROOT whereas the probability of a clash with the class names of
-    other group's code (e.g. ATLAS, CDF, PHENIX etc...) is minimised.
-    To prevent name clashes within the various (future) ALICE packages,
+    other group's code (e.g. IceCube) is minimised by using for instance
+    "Ice" as the start of class names related to IceCube specific software.
+    To prevent name clashes within the various (future) detector packages,
     please refer to the general note at the end.
- 3) Names of detector specific classes should start with "Ali" followed
-    by the detector name in uppercase, all other characters are lowercase
-    except the first character following the detector name, which has to
-    be uppercase..
-    Example : AliTPCSegment or AliPPCTiming.
-    These detector specific classes should only be introduced when there
-    is really a need for it.
-    E.g. when a track segment of the TPC and ITS have a lot in common
-    it would be better to introduce a general AliTracksegment class
-    instead of AliTPCSegment and AliITSSegment classes.
- 4) Class headers should be under the control of "#ifndef" and the name
-    should consist of "CLASSNAME_H" (i.e. the classname in uppercase).
-    Example : #ifndef ALITRACK_H
-              #define ALITRACK_H
+ 3) Class headers should be under the control of "#ifndef" and the name
+    should consist of "classname_h".
+    Example : #ifndef NcTrack_h
+              #define NcTrack_h
     In this way also the ifdefs will be unique and prevents the danger
     of having the name of an ifdef being the same as a Classname.
- 5) The private area in the class header has to be defined as the last item.
+ 4) The private area in the class header has to be defined as the last item.
     Macros, like the ROOT ClassDef() statement (if needed) must be put
-    appear at the right location, i.e. just before the "};" of the
+    to appear at the right location, i.e. just before the "};" of the
     class definition.
- 6) Names of member functions should start with a capital character
+ 5) Names of member functions should start with a capital character
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
     capital characters should be used to indicate various "words".
-    Example : AliTrack::Set3Momentum(float* p)
+    Example : NcTrack::Set3Momentum(...)
+ 6) The declaration of variables should adopt the ROOT type definitions
+    like for instance Int_t, Float_t, Double_t etc.
+    This will assure the most compact data format and correct type conversion
+    across various platforms.
  7) Names of datamembers of a class should start with a lowercase "f"
     and the next character has to be uppercase.
-    Example : float fEnergy
+    Example : Float_t fEnergy
     This will allow directly identification of datamembers in the code.
     The names of all other local variables may be chosen freely by the
     author.
     Note : It is recommended to use only lowercase characters
            for local variables.
- 8) Names of global variables should start with "gAli" and the next
-    character has to be uppercase.
-    Example : gAliRun
+ 8) Names of global variables should start with "g" and the next
+    characters have to be the detector specific character string
+    used as the start for the detector specific class names.
+    Example : gIcePandel
     This will allow directly identification of global variables in the
     code and will not clash with the existing ROOT globals like
     for instance gDirectory etc...
@@ -99,55 +102,51 @@ The rules are the following :
  
 General note :
 --------------
-Within the ALICE software pool it may happen that e.g. in simulation
+Within a certain software pool it may happen that e.g. in simulation
 applications one wants to define for instance a Track class which
 contains as data members some additional information (e.g. which was
-the corresponding parent particle) compared to the AliTrack class.
+the corresponding parent particle) compared to some generic MyTrack class.
 Since objects reconstructed from real data will always contain the
 minimal amount of information compared to e.g. objects from simulation,
 it is in the above case then necessary to introduce a new class
-AliSTrack (simulation track).
-Obviously such a newly defined object (AliSTrack) can be derived from
-the reconstruction object (AliTrack) and just have some data members
+MySTrack (simulation track).
+Obviously such a newly defined object (MySTrack) can be derived from
+the reconstruction object (MyTrack) and just have some data members
 and/or memberfunctions added to it.
 In such a way maximum flexibility is provided within every (future)
-ALICE project, whereas all produced data can always be analysed using
-the RALICE tools.
-In view of this it might even be preferred to impose as a convention
-for future projects to adopt a unique prefix for their specific classes.
-For example the prefixes "AliS" and "AliD" could be used to indicate
-the simulation and DAQ specific classes respectively.
+detector project, whereas all produced data can always be analysed using
+the generic detector tools.
  
 Installation :
 --------------
-The RALICE library can be automatically installed using the automatic CMZ
-installation procedure.
+The various shared libraries can be automatically installed using the provided shell
+scripts in the "scripts" directory of the various packages.
+It is essential that one first installs ROOT (including the TPythia6 package
+in view of the NcCollider physics event generator).
+Once ROOT is installed, the first shared library to be created is "ncfspack",
+after which all the detector specific shared libraries can be created.
  
-Available installation modes :
-------------------------------
-cmz -install ralice              --> GNU G++ loadable libralice.a
-cmz -install ralice shared       --> GNU G++ loadable shared library ralice.sl
-cmz -install ralice root         --> ROOT (G++ based) loadable library ralice.sl
-cmz -install ralice   -    msvc  --> MSVC++ loadable library
-cmz -install ralice shared msvc  --> MSVC++ loadable shared library ralice.dll
-cmz -install ralice root   msvc  --> ROOT (MSVC++ based) loadable library ralice.dll
-cmz -install ralice   -    hpcc  --> HP CC loadable library
-cmz -install ralice shared hpcc  --> HP CC loadable shared library ralice.sl
-cmz -install ralice root   hpcc  --> ROOT (HP CC based) loadable library ralice.sl
- 
+Invoking the various tools :
+----------------------------
+The functionality of a certain package is obtained by loading the needed shared
+libraries into the ROOT system. In doing so, one should always first load the
+generic "ncfspack" library, followed by the desired detector specific package(s).
+Example : To create the IceCube environment one should load the following libraries
+Root> gSystem->Load("ncfspack");
+Root> gSystem->Load("icepack");
  
 [1] http://root.cern.ch
  
  
  
                                            Nick van Eijndhoven
-                                           Subatomic Physics Dept.
-                                           Utrecht University/NIKHEF
-                                           P.O. Box 80.000
-                                           NL-3508 TA Utrecht
-                                           The Netherlands
-                                           Email: nick@phys.uu.nl
-                                           WWW: http://www.phys.uu.nl/~nick
+                                           Inter-university Institute for High Energies (IIHE)
+                                           Vrije Universiteit Brussel (VUB)
+                                           Pleinlaan 2
+                                           B-1050 Brussel
+                                           Belgium
+                                           Email: nick@icecube.wisc.edu
+                                           WWW: http://www.iihe.ac.be
 
 
 
