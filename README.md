@@ -62,8 +62,9 @@ The rules are the following :
  3) Class headers should be under the control of "#ifndef" and the name
     should consist of "classname_h".  
     For example :   
-      #ifndef NcTrack_h       
-      #define NcTrack_h
+      #ifndef NcTrack_h   
+      ...
+      #define NcTrack_h   
     In this way also the ifdefs will be unique and prevents the danger
     of having the name of an ifdef being the same as a Classname.
  4) The private area in the class header has to be defined as the last item.
