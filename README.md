@@ -63,7 +63,7 @@ The rules are the following :
     should consist of "classname_h".  
     For example :   
       #ifndef NcTrack_h   
-      ...
+      ...   
       #define NcTrack_h   
     In this way also the ifdefs will be unique and prevents the danger
     of having the name of an ifdef being the same as a Classname.
