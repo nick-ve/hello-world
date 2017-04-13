@@ -1,7 +1,6 @@
 # hello-world
-//CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
-
-//-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
+    //CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
+    //-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
  
 This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
