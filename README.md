@@ -62,7 +62,8 @@ The rules are the following :
     To prevent name clashes within the various (future) detector packages,
     please refer to the general note at the end.
  3) Class headers should be under the control of "#ifndef" and the name
-    should consist of "classname_h". 
+    should consist of "classname_h".
+    
         Example : #ifndef NcTrack_h
                   #define NcTrack_h
     In this way also the ifdefs will be unique and prevents the danger
