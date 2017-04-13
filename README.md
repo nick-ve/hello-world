@@ -1,10 +1,12 @@
 # hello-world
-  * //CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
-  * //-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
+//CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
+
+//-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
  
 This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
 detector data at the CERN LHC could be performed.
+
 In switching to Object Oriented programming, I myself have started to
 perform the WA93 and WA98 data analysis within the ROOT [1] framework
 and the corresponding ALICE software package was called RALICE.
@@ -12,12 +14,14 @@ Having seen the great advantages of this system I have started to make my
 C++ classes more general in order to use them as an onset for a generic
 reconstruction and (astro)physics analysis toolbox fully integrated within
 the ROOT framework.
+
 The basic generic classes providing various tools for detector signal handling,
 track storage, event building, physics analysis, statistics and even the simulation
 of particle collisions are contained in the "ncfspack" directory.
 In addition to that, various detector specific packages can be added to extend
 the functionality tailored to different experiments, like the "icepack" directory
 for the analysis of IceCube data.  
+
 The complete package can be compiled on all platforms which support ROOT,
 using for instance the GNU G++ compiler.
 Being embedded within the ROOT framework provides sophisticated analysis
@@ -60,8 +64,10 @@ The rules are the following :
     please refer to the general note at the end.
  3) Class headers should be under the control of "#ifndef" and the name
     should consist of "classname_h".
-    Example : #ifndef NcTrack_h
+     
+     Example : #ifndef NcTrack_h
               #define NcTrack_h
+ 
     In this way also the ifdefs will be unique and prevents the danger
     of having the name of an ifdef being the same as a Classname.
  4) The private area in the class header has to be defined as the last item.
