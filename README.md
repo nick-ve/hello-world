@@ -63,7 +63,6 @@ The rules are the following :
     please refer to the general note at the end.
  3) Class headers should be under the control of "#ifndef" and the name
     should consist of "classname_h".
-    
         Example : #ifndef NcTrack_h
                   #define NcTrack_h
     In this way also the ifdefs will be unique and prevents the danger
@@ -76,7 +75,7 @@ The rules are the following :
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
     capital characters should be used to indicate various "words".
-    Example : NcTrack::Set3Momentum(...)
+        Example : NcTrack::Set3Momentum(...)
  6) The declaration of variables should adopt the ROOT type definitions
     like for instance Int_t, Float_t, Double_t etc.
     This will assure the most compact data format and correct type conversion
@@ -136,8 +135,9 @@ The functionality of a certain package is obtained by loading the needed shared
 libraries into the ROOT system. In doing so, one should always first load the
 generic "ncfspack" library, followed by the desired detector specific package(s).
 Example : To create the IceCube environment one should load the following libraries
-Root> gSystem->Load("ncfspack");
-Root> gSystem->Load("icepack");
+
+    Root> gSystem->Load("ncfspack");
+    Root> gSystem->Load("icepack");
  
 [1] http://root.cern.ch
  
