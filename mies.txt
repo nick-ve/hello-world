@@ -3,8 +3,8 @@ oude DELL laptop met TSVN 1.7
 
 En nu even zien of the Key words Author, Date en ID werken :
 
-$Author
-$Date
-$ID
+$Author$
+$Date$
+$ID$
 
 
