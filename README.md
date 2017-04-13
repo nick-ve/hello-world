@@ -1,14 +1,10 @@
 # hello-world
-Just some text to enable a commit to check the formatting with the *no wrap* option.
-And another line to check the line-break.
-
-  - //CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
-  - //-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
+  * //CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
+  * //-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
  
 This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
 detector data at the CERN LHC could be performed.
-
 In switching to Object Oriented programming, I myself have started to
 perform the WA93 and WA98 data analysis within the ROOT [1] framework
 and the corresponding ALICE software package was called RALICE.
