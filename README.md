@@ -4,11 +4,10 @@
  
 This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
-detector data at the CERN LHC could be performed.
-
+detector data at the CERN LHC could be performed.   
 In switching to Object Oriented programming, I myself have started to
 perform the WA93 and WA98 data analysis within the ROOT [1] framework
-and the corresponding ALICE software package was called RALICE.
+and the corresponding ALICE software package was called RALICE.   
 Having seen the great advantages of this system I have started to make my
 C++ classes more general in order to use them as an onset for a generic
 reconstruction and (astro)physics analysis toolbox fully integrated within
@@ -16,11 +15,10 @@ the ROOT framework.
 
 The basic generic classes providing various tools for detector signal handling,
 track storage, event building, physics analysis, statistics and even the simulation
-of particle collisions are contained in the "ncfspack" directory.
+of particle collisions are contained in the "ncfspack" directory.   
 In addition to that, various detector specific packages can be added to extend
 the functionality tailored to different experiments, like the "icepack" directory
-for the analysis of IceCube data.  
-
+for the analysis of IceCube data.   
 The complete package can be compiled on all platforms which support ROOT,
 using for instance the GNU G++ compiler.
 Being embedded within the ROOT framework provides sophisticated analysis
@@ -62,9 +60,9 @@ The rules are the following :
     To prevent name clashes within the various (future) detector packages,
     please refer to the general note at the end.
  3) Class headers should be under the control of "#ifndef" and the name
-    should consist of "classname_h".
-        Example : #ifndef NcTrack_h
-                  #define NcTrack_h
+    should consist of "classname_h".   
+    Example : #ifndef NcTrack_h   
+              #define NcTrack_h
     In this way also the ifdefs will be unique and prevents the danger
     of having the name of an ifdef being the same as a Classname.
  4) The private area in the class header has to be defined as the last item.
@@ -74,23 +72,23 @@ The rules are the following :
  5) Names of member functions should start with a capital character
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
-    capital characters should be used to indicate various "words".
-        Example : NcTrack::Set3Momentum(...)
+    capital characters should be used to indicate various "words".    
+    Example : NcTrack::Set3Momentum(...)
  6) The declaration of variables should adopt the ROOT type definitions
     like for instance Int_t, Float_t, Double_t etc.
     This will assure the most compact data format and correct type conversion
     across various platforms.
  7) Names of datamembers of a class should start with a lowercase "f"
-    and the next character has to be uppercase.
+    and the next character has to be uppercase.   
     Example : Float_t fEnergy
     This will allow directly identification of datamembers in the code.
     The names of all other local variables may be chosen freely by the
-    author.
+    author.   
     Note : It is recommended to use only lowercase characters
            for local variables.
  8) Names of global variables should start with "g" and the next
     characters have to be the detector specific character string
-    used as the start for the detector specific class names.
+    used as the start for the detector specific class names.   
     Example : gIcePandel
     This will allow directly identification of global variables in the
     code and will not clash with the existing ROOT globals like
