@@ -1,4 +1,5 @@
 # hello-world
+Just some text to enable a commit to check the formatting with the "no wrap" option.
 //*CMZ :  1.00/01 04/07/97  16.43.13  by  Nick van Eijndhoven (UU/CERN)
 //*-- Author :    Nick van Eijndhoven (UU/CERN)   04/07/97
  
