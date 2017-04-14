@@ -52,7 +52,8 @@ The rules are the following :
     Mac, AMD and DECAlpha machines.
     This will assure the programs to run on all standard research platforms.
  2) The generic "ncfspack"  class names start with "Nc" followed by an
-    uppercase character, like for example : NcEvent.
+    uppercase character.   
+     Example : NcEvent.
     In this way the "ncfspack" class names will NEVER clash with the ones
     of ROOT whereas the probability of a clash with the class names of
     other group's code (e.g. IceCube) is minimised by using for instance
@@ -61,11 +62,11 @@ The rules are the following :
     please refer to the general note at the end.
  3) Class headers should be under the control of "#ifndef" and the name
     should consist of "classname_h".  
+    In this way also the "ifdefs" will be unique and it prevents the danger
+    of having the name of an "ifdef" being the same as a Classname.   
     For example :   
       #ifndef NcTrack_h   
-      #define NcTrack_h   
-    In this way also the ifdefs will be unique and prevents the danger
-    of having the name of an ifdef being the same as a Classname.
+      #define NcTrack_h 
  4) The private area in the class header has to be defined as the last item.
     Macros, like the ROOT ClassDef() statement (if needed) must be put
     to appear at the right location, i.e. just before the "};" of the
