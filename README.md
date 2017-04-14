@@ -73,24 +73,23 @@ The rules are the following :
  5) Names of member functions should start with a capital character
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
-    capital characters should be used to indicate various "words".    
+    capital characters should be used to indicate various "words".       
     Example : NcTrack::Set3Momentum(...)
  6) The declaration of variables should adopt the ROOT type definitions
     like for instance Int_t, Float_t, Double_t etc.
     This will assure the most compact data format and correct type conversion
     across various platforms.
  7) Names of datamembers of a class should start with a lowercase "f"
-    and the next character has to be uppercase.   
-    Example : Float_t fEnergy
+    and the next character has to be uppercase.      
+    Example : Float_t fEnergy   
     This will allow directly identification of datamembers in the code.
     The names of all other local variables may be chosen freely by the
     author.   
-    Note : It is recommended to use only lowercase characters
-           for local variables.
+    Note : It is recommended to use only lowercase characters for local variables.
  8) Names of global variables should start with "g" and the next
     characters have to be the detector specific character string
-    used as the start for the detector specific class names.   
-    Example : gIcePandel
+    used as the start for the detector specific class names.      
+    Example : gIcePandel   
     This will allow directly identification of global variables in the
     code and will not clash with the existing ROOT globals like
     for instance gDirectory etc...
