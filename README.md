@@ -74,8 +74,8 @@ The rules are the following :
  5) Names of member functions should start with a capital character
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
-    capital characters should be used to indicate various "words".          
-      Example : NcTrack::Set3Momentum(...)
+    capital characters should be used to indicate various "words".   
+     Example : NcTrack::Set3Momentum(...)
  6) The declaration of variables should adopt the ROOT type definitions
     like for instance Int_t, Float_t, Double_t etc.
     This will assure the most compact data format and correct type conversion
@@ -132,12 +132,12 @@ Invoking the various tools :
 ----------------------------
 The functionality of a certain package is obtained by loading the needed shared
 libraries into the ROOT system. In doing so, one should always first load the
-generic "ncfspack" library, followed by the desired detector specific package(s).
+generic "ncfspack" library, followed by the desired detector specific package(s).   
 Example : To create the IceCube environment one should load the following libraries
 
     Root> gSystem->Load("ncfspack");
-    Root> gSystem->Load("icepack");
- 
+    Root> gSystem->Load("icepack");   
+    
  
  
                                            Nick van Eijndhoven
