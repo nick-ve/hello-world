@@ -6,8 +6,8 @@ This project was started to provide an Object Oriented framework,
 consisting of C++ classes, in which event reconstruction of the ALICE
 detector data at the CERN LHC could be performed.   
 In switching to Object Oriented programming, I myself have started to
-perform the WA93 and WA98 data analysis within the ROOT [1] framework
-and the corresponding ALICE software package was called RALICE.   
+perform the WA93 and WA98 data analysis within the ROOT (http://root.cern.ch)
+framework and the corresponding ALICE software package was called RALICE.   
 Having seen the great advantages of this system I have started to make my
 C++ classes more general in order to use them as an onset for a generic
 reconstruction and (astro)physics analysis toolbox fully integrated within
@@ -73,15 +73,15 @@ The rules are the following :
  5) Names of member functions should start with a capital character
     and should NOT contain underscores (which drop out with HTML).
     From the name it should be clear what the functionality is and
-    capital characters should be used to indicate various "words".       
-    Example : NcTrack::Set3Momentum(...)
+    capital characters should be used to indicate various "words".          
+      Example : NcTrack::Set3Momentum(...)
  6) The declaration of variables should adopt the ROOT type definitions
     like for instance Int_t, Float_t, Double_t etc.
     This will assure the most compact data format and correct type conversion
     across various platforms.
  7) Names of datamembers of a class should start with a lowercase "f"
     and the next character has to be uppercase.      
-    Example : Float_t fEnergy   
+      Example : Float_t fEnergy   
     This will allow directly identification of datamembers in the code.
     The names of all other local variables may be chosen freely by the
     author.   
@@ -89,7 +89,7 @@ The rules are the following :
  8) Names of global variables should start with "g" and the next
     characters have to be the detector specific character string
     used as the start for the detector specific class names.      
-    Example : gIcePandel   
+      Example : gIcePandel   
     This will allow directly identification of global variables in the
     code and will not clash with the existing ROOT globals like
     for instance gDirectory etc...
@@ -136,8 +136,6 @@ Example : To create the IceCube environment one should load the following librar
 
     Root> gSystem->Load("ncfspack");
     Root> gSystem->Load("icepack");
- 
-[1] http://root.cern.ch
  
  
  
