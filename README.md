@@ -92,7 +92,7 @@ The rules are the following :
       Example : gIcePandel   
     This will allow directly identification of global variables in the
     code and will not clash with the existing ROOT globals like
-    for instance gDirectory etc...
+    for instance gDirectory etc...   
     Note : Usage of global variables should be avoided as much as
            possible. Most of the data transfer should go via the classes
            and their member functions (data hiding).
