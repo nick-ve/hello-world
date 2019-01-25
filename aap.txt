@@ -5,6 +5,11 @@ And now a new line added on the new DELL laptop with TSVN 1.7
 This line is added on my tablet using Quick editor which is
  Fast
  Handles large files
+And this line has been added on my newest Dell laptop
+via the TortoiseGit facility instead of the good old TortoiseSVN.
+Note : Both TortoiseSVN and TortoiseGit are installed next to each other,
+so both facilities can still be used.
+
  
 
 
