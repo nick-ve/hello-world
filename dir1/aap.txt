@@ -1,0 +1,4 @@
+Dit is file C:\nick\test\git\hello-world\dir1\aap.txt
+om een checkout van bepaalde directories te testen.
+January 27, 2019  20:55
+
