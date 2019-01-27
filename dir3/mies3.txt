@@ -1,0 +1,5 @@
+Dit is file C:\nick\test\git\hello-world\dir3\mies3.txt
+om checkout van een specifieke directory te testen.
+January 27, 2019  20:38
+
+
