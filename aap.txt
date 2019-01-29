@@ -17,6 +17,11 @@ C:\nick\test\git\hello-world\aap.txt
 *** Set tag subv3.0 directly in repo January 29, 2019  12:15 but nw after the new commit.
 *** Set tag subv4.0 via submodule January 29, 2019  13:05
 
+=== Line added via submodule January 29, 2019   14:50
+=== Just before, a line was added in noot.txt at the server.
+=== This is to check the the performance of submodule update with the "merge" and/or "rebase" options.
+
+
 
 
  
