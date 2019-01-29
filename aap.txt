@@ -9,6 +9,9 @@ And this line has been added on my newest Dell laptop
 via the TortoiseGit facility instead of the good old TortoiseSVN.
 Note : Both TortoiseSVN and TortoiseGit are installed next to each other,
 so both facilities can still be used.
+*** Line added via a submodule January 29, 2019  10:10
+Let's see whether this appears also in the original repository.
+
 
  
 
