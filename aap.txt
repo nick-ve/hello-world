@@ -11,6 +11,8 @@ Note : Both TortoiseSVN and TortoiseGit are installed next to each other,
 so both facilities can still be used.
 *** Line added via a submodule January 29, 2019  10:10
 Let's see whether this appears also in the original repository.
+C:\nick\test\git\hello-world\aap.txt
+*** Set tag subv2.0 directly in repo January 29, 2019  12:15
 
 
  
