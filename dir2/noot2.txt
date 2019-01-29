@@ -1,3 +1,5 @@
 Dit is file C:\nick\test\git\hello-world\dir2\noot2.txt
 om checkout van een specifieke directory te testen.
 January 27, 2019  20:38
+Line added January 29, 2019  11:58 to test the switch/checkout for pointing
+at a certain submodule.
