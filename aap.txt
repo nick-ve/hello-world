@@ -21,6 +21,8 @@ C:\nick\test\git\hello-world\aap.txt
 === Just before, a line was added in noot.txt at the server.
 === This is to check the the performance of submodule update with the "merge" and/or "rebase" options.
 
+*** regel toegevoegd in submodule January 29, 2019   15:30
+
 
 
 
