@@ -4,5 +4,7 @@ January 27, 2019  20:38
 line added from submodule; let's see whether sync push will work.
 January 29, 2019  11:40
 Sync push didn't work, let's see whether commit->submodule->master works
+*** Yep, commit->submodule->master worked well !
+
 
 
