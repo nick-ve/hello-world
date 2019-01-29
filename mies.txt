@@ -11,5 +11,7 @@ En nu ook hier een extra regel toegevoegd vanuit submodule January 29, 2019  11:
 
 regel toegevoegd NA het zetten van tag subv3.0 January 29, 2019  12:52
 
+== regel toegevoegd direct in repo January 29, 2019  15:27
+
 
 
