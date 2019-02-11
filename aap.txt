@@ -28,6 +28,9 @@ C:\nick\test\git\hello-world\aap.txt
 ==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
 February 11, 2019  13:41
 
+*** Nog een regel toegevoegd om git (sync) op de cluster te testen
+ 
+
 
 
 
