@@ -25,6 +25,9 @@ C:\nick\test\git\hello-world\aap.txt
 
 ==> Regel toegevoegd om te zien of dit in een svn update ook goed doorkomt.
 
+==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
+February 11, 2019  13:41
+
 
 
 

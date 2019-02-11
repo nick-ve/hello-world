@@ -7,3 +7,5 @@ at a certain submodule.
 ==> Regel toegevoegd om te zien of dit via svn update ook goed doorkomt
 February 11, 2019  02:39
 
+==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
+

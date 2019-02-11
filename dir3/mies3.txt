@@ -8,6 +8,8 @@ Sync push didn't work, let's see whether commit->submodule->master works
 
 ==> Regel toegevoegd om te zien of dit via svn update ook goed doorkomt.
 
+==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
+
 
 
 
