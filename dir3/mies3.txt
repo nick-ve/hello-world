@@ -6,5 +6,8 @@ January 29, 2019  11:40
 Sync push didn't work, let's see whether commit->submodule->master works
 *** Yep, commit->submodule->master worked well !
 
+==> Regel toegevoegd om te zien of dit via svn update ook goed doorkomt.
+
+
 
 

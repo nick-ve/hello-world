@@ -3,3 +3,7 @@ om checkout van een specifieke directory te testen.
 January 27, 2019  20:38
 Line added January 29, 2019  11:58 to test the switch/checkout for pointing
 at a certain submodule.
+
+==> Regel toegevoegd om te zien of dit via svn update ook goed doorkomt
+February 11, 2019  02:39
+
