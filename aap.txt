@@ -29,6 +29,8 @@ C:\nick\test\git\hello-world\aap.txt
 February 11, 2019  13:41
 
 *** Nog een regel toegevoegd om git (sync) op de cluster te testen
+==> Het commando "sync" bestaat niet; je moet "git pull" gebruiken om te updaten.
+
  
 
 
