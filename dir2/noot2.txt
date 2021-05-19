@@ -14,6 +14,8 @@ aap
 xxxxx
 op Ubuntu
 cached
+en nogmaals onder Win10
+
 
 
 
