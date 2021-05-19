@@ -13,6 +13,8 @@ en nog eentje na Putty port github
 dan nog maar eens
 nu met updated git
 now with wincred manager option
+now with command line credentials
+
 
 
 
