@@ -10,9 +10,11 @@ Sync push didn't work, let's see whether commit->submodule->master works
 
 ==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
 cached
-Regel toegevoegd om nog een keer het nieuwe GitHub access te testen
+Regel toegevoegd om nog een keer het nieuwe GitHub access via ssh te testen
 June 3, 2021  08:11Z
-
+... and now also for access via https
+June 3, 2021  08:16Z
+ 
 
 
 
