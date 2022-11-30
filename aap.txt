@@ -45,3 +45,5 @@ en nog eentje
 
 nog een regel
 x
+New line to see whether the Tutroise uncorrect git indicators will disappear
+from the shortcuts on my desktop.
