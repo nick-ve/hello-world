@@ -1,0 +1,30 @@
+Dit is file C:\nick\test\git\hello-world\dir1\aap2.txt
+om checkout van een bepaalde directory te testen.
+January 27, 2019  20:36
+
+line added to see whether it will show up also in the submodule
+January 29, 2019  11:36
+
+==> regel toegevoegd om te zien of dit via svn update ook goed doorkomt.
+
+==> Nog een regel toegevoegd om te zien of dit in een svn update op de cluster ook goed doorkomt.
+token test
+en nog eentje na Putty port github
+dan nog maar eens
+nu met updated git
+now with wincred manager option
+now with command line credentials
+op Ubuntu
+@@@@@@@@@@@@@@@
+cached
+====================
+Dit is een kopie van aap1.txt om te zien of alles nog hetzelfde werkt na activatie van de 2FA procedure.
+
+
+
+
+
+
+
+
+
