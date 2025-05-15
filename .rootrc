@@ -30,7 +30,7 @@ Rint.Logon:  rootlogon.cc
 Rint.Logoff: rootlogoff.cc
 Rint.History: $(HOME)/root_hist.C
 
-### Default 3d Viewer.
+### Default 3d Viewer. aap
 # By default 3-D views are shown in the pad,
 # if the next line is activated, the default viewer will be OpenGL.
 Viewer3D.DefaultDrawOption:   ogl
