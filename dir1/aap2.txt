@@ -19,6 +19,8 @@ op Ubuntu
 cached
 ====================
 Dit is een kopie van aap1.txt om te zien of alles nog hetzelfde werkt na activatie van de 2FA procedure.
+Added line to check whether Windows explorer still updates the file status.
+
 
 
 
