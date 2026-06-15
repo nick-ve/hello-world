@@ -48,3 +48,5 @@ x
 New line to see whether the Tutroise uncorrect git indicators will disappear
 from the shortcuts on my desktop.
 *** Added this line to see whether changes get through from my new laptop
+*** another line added to check the new laptop after github connection problems on the old one.
+ 
